@@ -1,0 +1,62 @@
+===========================================
+PREFACE
+===========================================
+This program is aims to create tables and insert the dataset into a PostgreSQL database.
+
+
+===========================================
+URL DATASET
+===========================================
+Dataset URL: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
+
+===========================================
+Data Definition Language Syntax
+===========================================
+Defines the structure of the `table_m3`, specifying columns, data types, and constraints using `CREATE TABLE`.
+
+CREATE TABLE tabel_m3 (
+    ID INTEGER PRIMARY KEY,
+    Year_Birth INTEGER,
+    Education VARCHAR(50),
+    Marital_Status VARCHAR(50),
+    Income FLOAT,
+    Kidhome INTEGER,
+    Teenhome INTEGER,
+    Dt_Customer DATE,
+    Recency INTEGER,
+    MntWines INTEGER,
+    MntFruits INTEGER,
+    MntMeatProducts INTEGER,
+    MntFishProducts INTEGER,
+    MntSweetProducts INTEGER,
+    MntGoldProds INTEGER,
+    NumDealsPurchases INTEGER,
+    NumWebPurchases INTEGER,
+    NumCatalogPurchases INTEGER,
+    NumStorePurchases INTEGER,
+    NumWebVisitsMonth INTEGER,
+    AcceptedCmp3 INTEGER CHECK (AcceptedCmp3 IN (0, 1)),
+    AcceptedCmp4 INTEGER CHECK (AcceptedCmp4 IN (0, 1)),
+    AcceptedCmp5 INTEGER CHECK (AcceptedCmp5 IN (0, 1)),
+    AcceptedCmp1 INTEGER CHECK (AcceptedCmp1 IN (0, 1)),
+    AcceptedCmp2 INTEGER CHECK (AcceptedCmp2 IN (0, 1)),
+    Complain INTEGER CHECK (Complain IN (0, 1)),
+    Z_CostContact INTEGER,
+    Z_Revenue INTEGER,
+    Response INTEGER CHECK (Response IN (0, 1))
+);
+
+===========================================
+Data Manipulation Language Syntax
+===========================================
+Inserts data from a CSV file into the `table_m3` using `COPY`.
+
+COPY table_m3 (
+    ID, Year_Birth, Education, Marital_Status, Income, Kidhome, Teenhome, Dt_Customer, Recency,
+    MntWines, MntFruits, MntMeatProducts, MntFishProducts, MntSweetProducts, MntGoldProds,
+    NumDealsPurchases, NumWebPurchases, NumCatalogPurchases, NumStorePurchases, NumWebVisitsMonth,
+    AcceptedCmp3, AcceptedCmp4, AcceptedCmp5, AcceptedCmp1, AcceptedCmp2, Complain, Z_CostContact, Z_Revenue, Response
+)
+
+FROM '/opt/airflow/data/P2M3_abyan_data_raw.csv'
+WITH (FORMAT csv, HEADER true, DELIMITER ',');

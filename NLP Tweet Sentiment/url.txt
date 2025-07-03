@@ -1,0 +1,6 @@
+Gdrive Gc7 item : https://drive.google.com/drive/folders/1l6GRujtYaBs1KroVzSi_hXpjCXGyf-Ij?usp=drive_link
+https://huggingface.co/spaces/Abyanfl/TweetSentiments
+twitter training csv https://drive.google.com/file/d/1odeHvDnxxKg0ZX3NkqC2MZk-huKVrVGo/view?usp=drive_link
+twitter evaluation csv https://drive.google.com/file/d/1xvY964cGbKxIFlso1Crrto7TwiUGdEXq/view?usp=drive_link
+model https://drive.google.com/file/d/14WsExHN1C3YaepfMd-Rp4-VH45757jZS/view?usp=drive_link
+token https://drive.google.com/file/d/14Q234I0eI4FlYofIoLs6IpU051bbnT-l/view?usp=drive_link
