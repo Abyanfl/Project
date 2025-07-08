@@ -105,20 +105,6 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-### Running the Notebook
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/employee-attrition.git
-   ```
-2. Open `Attrition.ipynb` in Jupyter Notebook or JupyterLab.
-3. Ensure the dataset (`WA_Fn-UseC_-HR-Employee-Attrition.csv`) is in the same directory.
-4. Run the cells sequentially to reproduce the analysis and model training.
-
-### Inference
-1. Open `P1M2_abyan_inference.ipynb`.
-2. Load the saved model (`best_model_rf.pkl`) and preprocessor (`preprocessor.pkl`).
-3. Use the notebook to make predictions on new data.
-
 ## Deployment
 The model is deployed on Hugging Face Spaces: [Model Deployment](https://huggingface.co/spaces/Abyanfl/ModelDeployment). Follow the link to interact with the model.
 
