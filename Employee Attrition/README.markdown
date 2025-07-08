@@ -21,7 +21,7 @@ The dataset used is the IBM HR Analytics Employee Attrition & Performance datase
 
 ```
 ├── Attrition.ipynb           # Main Jupyter notebook for data analysis, preprocessing, modeling, and evaluation
-├── P1M2_abyan_inference.ipynb # Inference notebook for testing the model on unseen data
+├── inference.ipynb # Inference notebook for testing the model on unseen data
 ├── best_model_rf.pkl         # Saved Random Forest model
 ├── preprocessor.pkl          # Saved preprocessing pipeline
 ├── WA_Fn-UseC_-HR-Employee-Attrition.csv # Dataset used for the project
