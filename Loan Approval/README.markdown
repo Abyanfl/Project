@@ -124,9 +124,3 @@ The model is deployed on Hugging Face Spaces: [Model Deployment](https://hugging
 - Scale the app to handle high volumes of applications as digital lending grows.
 - Implement continuous model retraining with real-world loan performance data.
 
-## Author
-- **Name**: Abyan Naufal
-- **Contact**: [Your contact information or GitHub profile]
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
